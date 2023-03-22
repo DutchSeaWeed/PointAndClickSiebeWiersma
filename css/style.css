@@ -39,6 +39,20 @@ body{
     top: 25px;
 }
 
+#door{
+    width: 50px;
+    height: 80px;
+    left: 85px;
+    top: 529px;
+}
+
+#fire{
+    width: 29px;
+    height: 25px;
+    left: 528px;
+    top: 41px;
+}
+
 .background{
     z-index: 0;
 }
