@@ -14,7 +14,31 @@ body{
 #gameWindow{
     width: 800px;
     height: 608px;
-    background-color: 001;
+    background-color: #00F;
     grid-row-start: 2;
     grid-column-start: 2;
+    position: relative;
+}
+
+.gameObject{
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+    background-color: #FFF;
+}
+
+.foreground{
+    z-index: 1000;
+}
+
+.gameCharacter{
+    z-index: 100;
+}
+
+#mainCharacter{
+    left: 692px;
+    top: 25px;
+}
+
+.background{
+    z-index: 0;
 }
