@@ -1,6 +1,9 @@
 body{
     background-color: #000;
     color: #FFF;
+    display: grid;
+    grid-template-columns: auto 800 auto;
+    grid-template-rows: auto 608 auto;
 }
 
 #gameWindow{
