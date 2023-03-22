@@ -2,3 +2,9 @@ body{
     background-color: #000;
     color: #FFF;
 }
+
+#gameWindow{
+    width: 800px;
+    height: 608px;
+    background-color: 001;
+}
