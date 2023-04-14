@@ -7,28 +7,45 @@
     <title>pointNclickGame</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <h1 id = "mainTitle"></h1>
-    <div id = "gameWindow">
+    <h1 id="mainTitle"></h1>
+    <div id="gameWindow">
+        <!--dialogue bar-->
+        <div id="dialogueBar" class="gameObject foreground">
+            <div id="dialogueContent">
+                <div id="brownBar" class="gameObject foreground"></div>
 
-    <!--foregroundLayer-->
-    <div id = "door" class = "gameObject foreground"></div> 
-    <div id = "fire" class = "gameObject foreground"></div> 
-    <!--mainCharacterLayer-->
-    <div id = "mainCharacter" class = "gameObject gameCharacter">
-        <img src="img/mainCharPng.png" alt="mainCharacter">
+                <img id="hero" class="gameObject foreground" src="img/portairt.png" alt="main character">
+                <div id="mainCharacterSpeech" class="gameObject foreground speech-bubble">...</div>
+                <div id="counterSpeech" class="gameObject foreground speech-bubble">...</div>
+                <img id="counterCharacter" class="gameObject foreground" src="img/counterChar.png"
+                    alt="counter character">
+            </div>
+        </div>
+
+        <!--foreground layer-->
+        <div id="closet" class="gameObject foreground"></div>
+        <div id="fire" class="gameObject foreground"></div>
+        <img id="otherCharacter" class="gameObject foreground" src="img/mainCharPng.png" alt="main character">
+
+        <!--main character layer-->
+        <div id="mainCharacter" class="gameObject character">
+            <img src="img/mainCharPng.png" alt="main character">
+        </div>
+
+        <!--background layer-->
+        <div id="titlemap" class="gameObject background">
+            <img src="img/tileMap.png" alt="tilemap">
+        </div>
     </div>
-
-    <!--backgroundLayer-->
-    <div id = "tileMap" class = "gameObject background">
-        <img src="img/tileMap.png" alt="tileMap">
-    </div>
-
-
-
-    </div>
-
-     <script src = "java/index.js"></script>
+    <audio id="characterAudio">
+        <source src="audio/Gibberish - Sound Effect_01.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="counterAudio">
+        <source src="audio/high pitch voice.mp3" type="audio/mpeg">
+    </audio>
+    <script src="java/index.js"></script>
 </body>
 
 </html>
